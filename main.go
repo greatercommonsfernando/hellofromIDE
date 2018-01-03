@@ -3,7 +3,12 @@ package main
 import "fmt"
 
 func testFunc(input int) string {
-	return fmt.Sprint(input)
+	switch input {
+	case 1:
+		return "one"
+	default:
+		return fmt.Sprint(input)
+	}
 }
 
 func main() {

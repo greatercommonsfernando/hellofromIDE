@@ -6,6 +6,8 @@ func testFunc(input int) string {
 	switch input {
 	case 1:
 		return "one"
+	case 2:
+		return "two"
 	default:
 		return fmt.Sprint(input)
 	}

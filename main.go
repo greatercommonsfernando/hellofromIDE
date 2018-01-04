@@ -9,6 +9,7 @@ func testFunc(input int) string {
 	case 2:
 		return "two"
 	default:
+
 		return fmt.Sprint(input)
 	}
 }

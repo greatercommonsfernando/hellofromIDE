@@ -3,13 +3,13 @@ package main
 import "testing"
 
 func TestFunc(t *testing.T) {
-	if testFunc(1) != "one" {
+	if testingFunc(1) != "one" {
 		t.Fail()
 	}
-	if testFunc(2) != "two" {
+	if testingFunc(2) != "two" {
 		t.Fail()
 	}
-	if testFunc(3) == "" {
+	if testingFunc(3) == "" {
 		t.Fail()
 	}
 }

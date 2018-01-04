@@ -2,19 +2,23 @@ package main
 
 import "fmt"
 
-func testFunc(input int) string {
-	switch input {
+func testingFunc(i int) string {
+	switch i {
 	case 1:
 		return "one"
 	case 2:
 		return "two"
 	default:
-
-		return fmt.Sprint(input)
+		return printString(i)
 	}
+}
+
+func printString(i int) string {
+	return fmt.Sprint(i)
 }
 
 func main() {
 	fmt.Println("Hello from Goland!")
-	fmt.Println(testFunc(1))
+	fmt.Println(testingFunc(1))
+	fmt.Println(1, 2, 3, "hello")
 }
